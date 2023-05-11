@@ -1,0 +1,67 @@
+
+* {
+ margin: 0;
+ padding: 0;
+}
+html {
+ height: 100%;
+}
+body {
+ height: 100%;
+}
+.container {
+ height: 100%;
+ background-image: linear-gradient(to left, white, #a6c1ee);
+}
+.wrapper{
+ background-color: #f5deb3;
+ width: 350px;
+ height: 450px;
+ border-radius: 15px;
+ padding: 0 50px;
+ padding-top: 5%;
+ padding-bottom: 3%;
+ position: relative;
+ left: 50%;
+ top: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+}
+.lgform{
+ margin-top: 20px;
+}
+form {
+ margin-top: 20px;
+}
+
+.msgBox #msg {
+    color: red;
+    font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+ border-radius: 5px;
+ border: none;
+ padding: 10px;
+ margin-bottom: 10px;
+}
+input[type="submit"], button[type="button"],button[type="submit"] {
+ border-radius: 5px;
+ border: none;
+ padding: 10px;
+ margin-bottom: 0px;
+ background-color: #a6c1ee;
+ color:white;
+ cursor:pointer;
+}
+input[type="submit"]:hover, button[type="button"]:hover, button[type="submit"]:hover {
+ background-color:#6e8db7
+}
+
+.captchabox img {
+    height: 40px;
+    vertical-align: middle;
+}
+.captchabox button {
+    vertical-align: middle;
+}

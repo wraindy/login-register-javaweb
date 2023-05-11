@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <link rel="stylesheet" href="./res/css/register.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="wrapper">
+    
+            <h1>注册界面</h1>
+        <form action="/RegisterControl" method="post" id="rform">
+    
+            <label for="username">用&emsp;&emsp;户&emsp;&emsp;名:&emsp;</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">密&emsp;&emsp;&emsp;&emsp;&emsp;码:&emsp;</label>
+            <input type="password" id="password" name="password"><br><br>
+            <label for="password">再&emsp;次&emsp;输&emsp;入：</label>
+            <input type="password" id="password2" name="password2"><br><br>
+            <label for="code">验&emsp;&emsp;证&emsp;&emsp;码:&emsp;</label>
+            <input type="text" id="code" name="code"><br><br>
+            <div class="captchabox">
+                <img src="/GetCAPTCHA" alt="验证码">
+                <button type="button" class="button">看不清</button><br><br>
+            </div>
+            <!-- <input type="checkbox" id="rememberme" name="rememberme">记住我 -->
+    
+            <br>
+            <div class="msgBox">
+                <span id="msg"></span>
+            </div>
+            <br>
+    
+            <button type="submit" class="button">点击注册</button>
+            <button type="button" class="button" onclick="location.href='./login.html'">已有账号？</button>
+    
+           </form>
+        </div>
+            
+        </div>
+    <script src="./res/js/register.js"></script>
+</body>
+</html>

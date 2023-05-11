@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="./res/css/login.css">
+</head>
+<body>
+    <div class="container">
+    <div class="wrapper">
+
+        <h1>登录界面</h1>
+    <form action="/LoginControl" method="post" id="lgform">
+
+        <label for="username">用户名:&emsp;</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">密&emsp;码:&emsp;</label>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="code">验证码:&emsp;</label>
+        <input type="text" id="code" name="code"><br><br>
+        <div class="captchabox">
+            <img src="/GetCAPTCHA" alt="验证码">
+            <button type="button" class="button">看不清</button><br><br>
+        </div>
+        <input type="checkbox" id="rememberme" name="rememberme">记住我
+
+        <br>
+        <div class="msgBox">
+            <span id="msg"></span>
+        </div>
+        <br>
+
+        <button type="submit" class="button">点击登录</button>
+        <button type="button" class="button" onclick="location.href='./register.html'">去注册？</button>
+
+       </form>
+    </div>
+        
+    </div>
+
+    
+    <script src="./res/js/login.js"></script>
+</body>
+</html>
